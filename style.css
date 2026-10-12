@@ -84,6 +84,7 @@ nav a:hover {
     font-size: 10px;
     margin-top: 10px;
 }
+/*スマートフォン*/
 @media screen and (max-width: 600px) {
     #top {
         padding-top: 80px;
@@ -100,12 +101,14 @@ nav a:hover {
     .works-controls {
         flex-direction: column;
     }
+/* 天気 */
 }
 #weather-icon {
     font-size: 60px;
     margin: 0;
 }
 
+/* 晴れ */
 body.weather-sunny {
     background-color: #fffaf0;
 }
@@ -113,16 +116,18 @@ body.weather-sunny .site-header {
     background-color: #fffaf0;
 }
 
+/* 曇り */
 body.weather-cloudy {
     background-color: #dfe3e8;
 }
-body.weather-cloudy {
+body.weather-cloudy .site-header {
     background-color: #dfe3e8;
 }
 
+/* 雨 */
 body.weather-rainy {
     background-color: #cbd9e5;
 }
-body.weather-rainy {
+body.weather-rainy .site-header {
     background-color: #cbd9e5;
 }

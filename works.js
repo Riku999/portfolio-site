@@ -138,13 +138,13 @@ fetch("works.csv")
     "&current=Asia%2FTokyo";
 
     fetch(weatherUrl)
-    .then(function(response) {
-        return response.json();
-    })
-    .then(function(data) {
-        var weatherCode = data.current.weather_code;
-        showWeather(weatherCode);
-    })
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(data) {
+            var weatherCode = data.current.weather_code;
+            showWeather(weatherCode);
+        })
 
     function showWeather(code) {
 
@@ -156,7 +156,7 @@ fetch("works.csv")
 
         } else if (code >= 1 && code <= 3) {
             icon.textContent = "☁";
-            document.body.className = "wether-cloudy";
+            document.body.className = "weather-cloudy";
 
         } else if (code >=51 && code <= 67) {
             icon.textContent = "☂";
