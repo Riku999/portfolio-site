@@ -135,7 +135,7 @@ fetch("works.csv")
         "?latitude=" + latitude +
         "&longitude=" + longitude +
         "&current=temperature_2m,weather_code" +
-        "&current=Asia%2FTokyo";
+        "&timezone=Asia%2FTokyo";
 
     fetch(weatherUrl)
         .then(function(response) {
