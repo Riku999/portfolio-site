@@ -131,11 +131,11 @@ fetch("works.csv")
     var longitude = 139.6917;
 
     var weatherUrl =
-    "https://api.open-meteo.com/v1/forecast" +
-    "?latitude=" + latitude +
-    "&longitude=" + longitude +
-    "&current=temperature_2m,weather_code" +
-    "&current=Asia%2FTokyo";
+        "https://api.open-meteo.com/v1/forecast" +
+        "?latitude=" + latitude +
+        "&longitude=" + longitude +
+        "&current=temperature_2m,weather_code" +
+        "&current=Asia%2FTokyo";
 
     fetch(weatherUrl)
         .then(function(response) {
