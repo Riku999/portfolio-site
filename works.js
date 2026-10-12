@@ -167,3 +167,5 @@ fetch("works.csv")
             document.body.className = "weather-cloudy"
         }
     }
+
+    document.getElementById("weather-icon").textContent = "☀";
