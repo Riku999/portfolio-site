@@ -147,3 +147,14 @@ body.weather-rainy .site-header {
 
     text-align: center;
 }
+
+@media (max-width: 768px) {
+
+    .omikuji-box {
+        position: static;
+
+        width: 80%;
+
+        margin: 20px auto;
+    }
+}
