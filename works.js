@@ -167,3 +167,20 @@ fetch("works.csv")
             document.body.className = "weather-cloudy"
         }
     }
+
+    function drawFortune() {
+    const fortunes = [
+        "大吉",
+        "中吉",
+        "小吉",
+        "吉",
+        "末吉",
+        "凶"
+    ];
+
+    const randomIndex =
+        Math.floor(Math.random() * fortunes.length);
+
+    document.getElementById("fortune-result")
+        .textContent = fortunes[randomIndex];
+}
